@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    text-align: center;
+    color: white;
+}
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+nav ul li {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li:nth-child(1) { background: #ff7e5f; }
+nav ul li:nth-child(2) { background: #8e44ad; }
+nav ul li:nth-child(3) { background: #3498db; }
+nav ul li:nth-child(4) { background: #2ecc71; }
+nav ul li:nth-child(5) { background: #e74c3c; }
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+#home { background: linear-gradient(to right, #ff7e5f, #feb47b); }
+#about { background: linear-gradient(to right, #8e44ad, #c0392b); }
+#services { background: linear-gradient(to right, #3498db, #2c3e50); }
+#portfolio { background: linear-gradient(to right, #2ecc71, #16a085); }
+#contact { background: linear-gradient(to right, #e74c3c, #f39c12); }
+footer { background: #34495e; padding: 20px; }
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+input, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+button {
+    padding: 10px;
+    background: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover { background: #c70039; }
+
+#home{
+    min-height: 100vh;
+}
