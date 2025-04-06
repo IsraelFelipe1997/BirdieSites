@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Three.js - Grade com Onda Lenta</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    canvas { display: block; }
+  </style>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js"></script>
+
+  <script>
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(
+      75, window.innerWidth / window.innerHeight, 0.1, 1000
+    );
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+    scene.add(ambientLight);
+
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+    directionalLight.position.set(10, 10, 10).normalize();
+    scene.add(directionalLight);
+
+    // Esfera
+    const sphereGeometry = new THREE.SphereGeometry(0.4, 32, 32);
+    const sphereMaterial = new THREE.MeshStandardMaterial({ color: 0xffffff });
+
+    // Aumentamos colunas e reduzimos linhas
+    const cols = 40; // largura (mais)
+    const rows = 8;  // altura (menos)
+    const spacing = 1.2;
+
+    const spheres = [];
+
+    for (let x = 0; x < cols; x++) {
+      for (let z = 0; z < rows; z++) {
+        const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+        sphere.position.set(
+          (x - cols / 2) * spacing,
+          0,
+          (z - rows / 2) * spacing
+        );
+        scene.add(sphere);
+        spheres.push({ mesh: sphere, x, z });
+      }
+    }
+
+    camera.position.set(0, 10, 25);
+    camera.lookAt(0, 0, 0);
+
+    let time = 0;
+
+    function animate() {
+      requestAnimationFrame(animate);
+      time += 0.01; // 🔹 mais devagar
+
+      spheres.forEach(({ mesh, x, z }) => {
+        const wave = Math.sin(time + (x + z) * 0.4);
+        mesh.position.y = wave;
+      });
+
+      renderer.render(scene, camera);
+    }
+
+    animate();
+
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+  </script>
+
