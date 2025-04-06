@@ -50,7 +50,7 @@ section {
     overflow: hidden;
     align-items: flex-start;
     padding-left: 40px;
-    background: linear-gradient(to right, #1723cf, #12015e);
+    background: linear-gradient(to right,#12015e, #1723cf);
 }
 
 #home h1 {
