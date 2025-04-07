@@ -9,28 +9,39 @@
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
 </head>
 <body>
-    <nav>
-        <ul>
+    <header>
+        <div class="logo">
+          <img src="images/logo/birdie_logotipo.png" alt="BirdieSites Logo" />
+        </div>
+        <nav>
+          <ul>
             <li><a href="#home">Início</a></li>
             <li><a href="#about">Sobre</a></li>
             <li><a href="#services">Serviços</a></li>
             <li><a href="#portfolio">Portfólio</a></li>
             <li><a href="#contact">Contato</a></li>
-        </ul>
-    </nav>
-
+          </ul>
+        </nav>
+    </header>
+    
     <section id="home">
-        <h1>BirdieSites</h1>
+        <div class="clouds">
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+        </div>        
+        <h1>Criação de Sites Profissionais para Empresas e Negócios.</h1>
         <p>Transformamos suas ideias em sites incríveis e profissionais.</p>
         <p>Desenvolvimento web moderno, responsivo e otimizado para resultados.</p>
         <a href="#contact" class="cta-button">Solicite um Orçamento</a>
     </section>
 
     <section id="about">
+
         <div id="about-animation"></div>
         <div class="content">
-            <h2>Sobre</h2>
-            <p>Sou um desenvolvedor web apaixonado por criar sites incríveis e responsivos.</p>
+            <h2 style="color: black;">Sobre</h2>
+            <p style="color: black;">Sou um desenvolvedor web apaixonado por criar sites incríveis e responsivos.</p>
         </div>
     </section>
 
@@ -83,13 +94,10 @@
           color1: 0x989887,
           color2: 0xf58716,
           colorMode: "lerp",
-            speedLimit: 10.00,
-            separation: 76.00,
-            alignment: 94.00,
-            backgroundColor: 0xc5c5f5,
-            backgroundAlpha: 0.00
-
-
+          speedLimit: 10.00,
+          separation: 76.00,
+          alignment: 94.00,
+          backgroundAlpha: 0.00
         })
     </script>
 </body>
