@@ -1,4 +1,67 @@
 - criar um botão que toggle para modo claro/escuro (day/night)
 - adicionar montanhas na section home
 - animação do logotipo, fazer o passaro bater as asas sempre que clicar no menu
-- desenvolver a pagina de serviços com animações json
+- desenvolver video para integrar no site
+- desenvolver a pagina para outros idiomas
+    meusite.com/ → português
+    meusite.com/en/ → inglês
+    meusite.com/es/ → espanhol
+
+- desenvolver a pagina de serviços com animações json:
+
+ Organização Estratégica da Section "Serviços":
+
+🔹 1. Desenvolvimento Personalizado
+Descrição curta: Criação de sites únicos, alinhados à identidade e objetivo de cada negócio.
+
+Destaques:
+
+Sem uso de templates genéricos.
+
+Design sob medida com atenção a cada detalhe visual.
+
+Experiência de usuário fluida e intuitiva.
+
+🔹 2. Código Limpo e Otimizado
+Descrição curta: Estrutura robusta e eficiente, desde o front-end até o back-end.
+
+Destaques:
+
+Código escrito à mão, sem plugins pesados.
+
+Performance superior e carregamento rápido.
+
+SEO técnico diretamente no HTML e estrutura.
+
+🔹 3. Design Moderno e Interativo
+Descrição curta: Interfaces modernas com animações que encantam e engajam.
+
+Destaques:
+
+Animações em After Effects com Bodymovin/Lottie.
+
+Interatividade com Three.js e JavaScript puro.
+
+Layouts responsivos para todos os dispositivos.
+
+🔹 4. Visibilidade com SEO
+Descrição curta: Otimizações desde o início para conquistar posições no Google.
+
+Destaques:
+
+SEO on-page e estrutura semântica otimizada.
+
+Estratégia de palavras-chave pensada para o negócio.
+
+Compatibilidade com ferramentas de indexação.
+
+🔹 5. Análise de Resultados
+Descrição curta: Tomada de decisão baseada em dados reais do seu público.
+
+Destaques:
+
+Integração com Google Analytics e Tag Manager.
+
+Relatórios de performance e comportamento dos usuários.
+
+Suporte para campanhas e melhorias contínuas.
