@@ -270,7 +270,7 @@ section {
 
 #about {
   padding: 80px 20px;
-  background: linear-gradient(to right, #d8d8d8, #ffffff); position: relative;
+  background: linear-gradient(to right, #3498db, #2c3e50);
   text-align: center;
   position: relative;
   z-index: 10;
@@ -373,8 +373,8 @@ section {
 
 
 /* #about { background: linear-gradient(to right, #8e44ad, #c0392b); position: relative; } */
-#about { background: linear-gradient(to right, #d8d8d8, #ffffff); position: relative; }
-#services { background: linear-gradient(to right, #3498db, #2c3e50); }
+/* #about { background: linear-gradient(to right, #d8d8d8, #ffffff); } */
+#services { background: linear-gradient(to right, #d8d8d8, #ffffff); }
 #portfolio { background: linear-gradient(to right, #2ecc71, #16a085); }
 #contact { background: linear-gradient(to right, #e74c3c, #f39c12); }
 footer { background: #34495e; padding: 20px; }
