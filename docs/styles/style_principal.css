@@ -189,7 +189,12 @@ section {
     font-family: "Agency FB", sans-serif;
 }
 
-#home p {
+.dot {
+  color: #ff7e5f;
+}
+
+
+#home p:not(#typing-effect) {
     font-size: 1em;
     text-align: left;
     opacity: 0;
@@ -199,6 +204,39 @@ section {
 }
 #home p:nth-of-type(2) {
     animation-delay: 0.5s;
+}
+
+#typing-effect {
+  font-family: "Agency FB", sans-serif;
+  font-size: 1em;              /* igual ao #home p */
+  text-align: left;
+  color: white;
+  margin-top: 10px;
+  line-height: 1.5;
+  opacity: 1;                  /* já começa visível, pois não tem fade */
+}
+
+
+.cursor {
+  display: inline-block;
+  width: 8px;              /* grossura do cursor */
+  height: 1em;             /* altura igual ao texto */
+  background-color: white; /* cor do cursor */
+  margin-left: 5px;        /* espaço entre o texto e o cursor */
+  animation: blink 0.8s infinite;
+  vertical-align: middle;  /* alinha melhor com o texto */
+  border-radius: 2px;      /* cantos levemente arredondados (opcional) */
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 

@@ -31,9 +31,32 @@
             <div class="cloud"></div>
         </div>        
         <div class="mountains"></div>
-        <h1>Criação de Sites Profissionais para Empresas e Negócios.</h1>
-        <p>Transforme suas ideias em sites incríveis e profissionais personalizados.</p>
-        <p>Estratégia para SEO desde o código.</p>
+        <h1>Criação de Sites Profissionais para Empresas e Negócios<span class="dot">.</span></h1>
+        <p>Transforme suas ideias em sites incríveis e profissionais</p>
+        <p id="typing-effect">
+            <span class="typed-text"></span>
+            <span class="cursor"></span>
+        </p>
+        <script>
+            const text = "Estratégia para SEO desde o código! < />";
+            const typedText = document.querySelector(".typed-text");
+            const cursor = document.querySelector(".cursor");
+          
+            let index = 0;
+          
+            function type() {
+              if (index < text.length) {
+                typedText.textContent += text.charAt(index);
+                index++;
+                setTimeout(type, 50); // velocidade da digitação
+              }
+            }
+          
+            // Espera 900ms antes de começar a digitação
+            setTimeout(type, 900);
+          </script>
+          
+          
         <a href="#contact" class="cta-button">Comece seu site agora!</a>
     </section>
 
@@ -53,8 +76,8 @@
       
           <div class="about-content">
             <h2>Sobre</h2>
-            <p>Sou profissional formado em Engenharia de Computação, com experiência em grandes empresas do setor de tecnologia. Especializado em desenvolvimento web.
-                Meu foco está na criação de páginas personalizadas, desenvolvidas a partir do zero, sem uso de templates prontos, 
+            <p>Sou profissional formado em Engenharia de Computação, com experiência em grandes empresas do setor de tecnologia.
+                Meu foco está na criação de Sites personalizados, desenvolvidos a partir do zero, sem uso de templates prontos, 
                 para entrega de sites rápidos, responsivos e otimizados, garantindo originalidade, performance e boas praticas de SEO para ranqueamento no google e total alinhamento com os objetivos de cada cliente.            
             </p>
             
