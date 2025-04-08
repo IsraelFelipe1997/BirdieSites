@@ -1,2 +1,3 @@
 - criar um botão que toggle para modo claro/escuro (day/night)
 - adicionar montanhas na section home
+- animação do logotipo
