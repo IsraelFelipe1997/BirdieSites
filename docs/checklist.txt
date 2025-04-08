@@ -1,3 +1,3 @@
 - criar um botão que toggle para modo claro/escuro (day/night)
 - adicionar montanhas na section home
-- animação do logotipo
+- animação do logotipo, fazer o passaro bater as asas sempre que clicar no menu
