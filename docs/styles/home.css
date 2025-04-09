@@ -1,20 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    scroll-behavior: smooth;
-}
-
-@font-face {
-  font-family: "Agency FB";
-  src: url("../styles/fonts/agency-fb/AGENCYB.TTF") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
-    text-align: center;
+    text-align: justify;
     color: white;
 }
 
@@ -193,7 +178,6 @@ section {
   color: #ff7e5f;
 }
 
-
 #home p:not(#typing-effect) {
     font-size: 1em;
     text-align: left;
@@ -215,7 +199,6 @@ section {
   line-height: 1.5;
   opacity: 1;                  /* já começa visível, pois não tem fade */
 }
-
 
 .cursor {
   display: inline-block;
@@ -268,92 +251,7 @@ section {
 }
 
 
-#about {
-  padding: 80px 20px;
-  background: linear-gradient(to right, #3498db, #2c3e50);
-  text-align: center;
-  position: relative;
-  z-index: 10;
-}
 
-.about-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-}
-
-.flip-card {
-  background: transparent;
-  width: 500px;
-  height: 500px;
-  perspective: 1000px;
-  flex-shrink: 0;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.8s ease;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 16px;
-  overflow: hidden;
-}
-
-.flip-card-front img,
-.flip-card-back img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.flip-card-back {
-  transform: rotateY(180deg);
-}
-
-.about-content {
-  flex: 1;
-  min-width: 280px;
-  color: black;
-}
-
-.about-content h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  font-family: "Agency FB", sans-serif;
-}
-
-.about-content p {
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-
-.about-highlights {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 20px;
-}
-
-.about-highlights li {
-  margin-bottom: 10px;
-  font-size: 1rem;
-}
 
 .cta-button {
   display: inline-block;
@@ -370,26 +268,27 @@ section {
   background-color: var(--primary-dark);
 }
 
-
-
 /* #about { background: linear-gradient(to right, #8e44ad, #c0392b); position: relative; } */
 /* #about { background: linear-gradient(to right, #d8d8d8, #ffffff); } */
 #services { background: linear-gradient(to right, #d8d8d8, #ffffff); }
 #portfolio { background: linear-gradient(to right, #2ecc71, #16a085); }
 #contact { background: linear-gradient(to right, #e74c3c, #f39c12); }
 footer { background: #34495e; padding: 20px; }
+
 form {
     display: flex;
     flex-direction: column;
     gap: 15px;
     width: 300px;
 }
+
 input, textarea {
     padding: 10px;
     border: none;
     border-radius: 5px;
     width: 100%;
 }
+
 button {
     padding: 10px;
     background: #ff5733;
@@ -400,7 +299,9 @@ button {
     cursor: pointer;
     transition: 0.3s;
 }
+
 button:hover { background: #c70039; }
+
 .cta-button {
     padding: 15px 25px;
     font-size: 1.2em;
@@ -412,10 +313,12 @@ button:hover { background: #c70039; }
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
 }
+
 .cta-button:hover {
     background-color: #ff7e5f;
     color: white;
 }
+
 #about-animation {
     position: absolute;
     top: 0;
@@ -424,6 +327,7 @@ button:hover { background: #c70039; }
     height: 100%;
     z-index: 0;
 }
+
 #about .content {
     position: relative;
     z-index: 1;

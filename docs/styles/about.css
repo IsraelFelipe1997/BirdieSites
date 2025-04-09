@@ -1,0 +1,86 @@
+#about {
+    padding: 80px 20px;
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .flip-card {
+    background: transparent;
+    width: 500px;
+    height: 500px;
+    perspective: 1000px;
+    flex-shrink: 0;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  
+  .flip-card-front img,
+  .flip-card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+  
+  .about-content {
+    flex: 1;
+    min-width: 280px;
+    color: black;
+  }
+  
+  .about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: "Agency FB", sans-serif;
+  }
+  
+  .about-content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .about-highlights {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  
+  .about-highlights li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
