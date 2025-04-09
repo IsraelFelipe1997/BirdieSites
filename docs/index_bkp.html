@@ -4,223 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BirdieSites - Desenvolvimento Web</title>
-    <link rel="stylesheet" href="styles/style_principal.css">
     <!-- Three.js e Vanta.js Birds Effect -->
-<script src="https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
-
 </head>
 <body>
 
-
-  <script>
-  var setVanta = ()=>{
-  if (window.VANTA) window.VANTA.BIRDS({
-    el: ".s-page-1 .s-section-1 .s-section",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 200.00,
-    minWidth: 200.00,
-    scale: 1.00,
-    scaleMobile: 1.00,
-    color1: 0xd91616,
-    color2: 0xc3e8
-  })
-  }
-  _strk.push(function() {
-    setVanta()
-    window.edit_page.Event.subscribe( "Page.beforeNewOneFadeIn", setVanta )
-  })
-  </script>
-
-
-  <section id="home">
-    <div class="vanta-container">
-      <h1>BirdieSites</h1>
-      <p>Transformamos suas ideias em sites incríveis e profissionais.</p>
-      <p>Desenvolvimento web moderno, responsivo e otimizado para resultados.</p>
-      <a href="#contact" class="cta-button">Solicite um Orçamento</a>
+  <section id="servicos" class="py-16 bg-gray-100 text-gray-800">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">Serviços</h2>
+      
+      <div class="grid md:grid-cols-2 gap-10">
+        
+        <!-- Serviço 1 -->
+        <div class="bg-white rounded-2xl shadow p-6">
+          <h3 class="text-2xl font-semibold mb-2">1. Desenvolvimento Personalizado</h3>
+          <p class="text-gray-600 mb-4">Criação de sites únicos, alinhados à identidade e objetivo de cada negócio.</p>
+          <ul class="list-disc list-inside space-y-1 text-gray-700">
+            <li>Sem uso de templates genéricos.</li>
+            <li>Design sob medida com atenção a cada detalhe visual.</li>
+            <li>Experiência de usuário fluida e intuitiva.</li>
+          </ul>
+        </div>
+        
+        <!-- Serviço 2 -->
+        <div class="bg-white rounded-2xl shadow p-6">
+          <h3 class="text-2xl font-semibold mb-2">2. Código Limpo e Otimizado</h3>
+          <p class="text-gray-600 mb-4">Estrutura robusta e eficiente, desde o front-end até o back-end.</p>
+          <ul class="list-disc list-inside space-y-1 text-gray-700">
+            <li>Código escrito à mão, sem plugins pesados.</li>
+            <li>Performance superior e carregamento rápido.</li>
+            <li>SEO técnico diretamente no HTML e estrutura.</li>
+          </ul>
+        </div>
+  
+        <!-- Serviço 3 -->
+        <div class="bg-white rounded-2xl shadow p-6">
+          <h3 class="text-2xl font-semibold mb-2">3. Design Moderno e Interativo</h3>
+          <p class="text-gray-600 mb-4">Interfaces modernas com animações que encantam e engajam.</p>
+          <ul class="list-disc list-inside space-y-1 text-gray-700">
+            <li>Animações em After Effects com Bodymovin/Lottie.</li>
+            <li>Interatividade com Three.js e JavaScript puro.</li>
+            <li>Layouts responsivos para todos os dispositivos.</li>
+          </ul>
+        </div>
+  
+        <!-- Serviço 4 -->
+        <div class="bg-white rounded-2xl shadow p-6">
+          <h3 class="text-2xl font-semibold mb-2">4. Visibilidade com SEO</h3>
+          <p class="text-gray-600 mb-4">Otimizações desde o início para conquistar posições no Google.</p>
+          <ul class="list-disc list-inside space-y-1 text-gray-700">
+            <li>SEO on-page e estrutura semântica otimizada.</li>
+            <li>Estratégia de palavras-chave pensada para o negócio.</li>
+            <li>Compatibilidade com ferramentas de indexação.</li>
+          </ul>
+        </div>
+  
+        <!-- Serviço 5 -->
+        <div class="bg-white rounded-2xl shadow p-6 md:col-span-2">
+          <h3 class="text-2xl font-semibold mb-2">5. Análise de Resultados</h3>
+          <p class="text-gray-600 mb-4">Tomada de decisão baseada em dados reais do seu público.</p>
+          <ul class="list-disc list-inside space-y-1 text-gray-700">
+            <li>Integração com Google Analytics e Tag Manager.</li>
+            <li>Relatórios de performance e comportamento dos usuários.</li>
+            <li>Suporte para campanhas e melhorias contínuas.</li>
+          </ul>
+        </div>
+  
+      </div>
     </div>
   </section>
   
-    
-    <nav>
-        <ul>
-            <li><a href="#home">🏠</a></li>
-            <li><a href="#about">ℹ️</a></li>
-            <li><a href="#services">💻</a></li>
-            <li><a href="#portfolio">📁</a></li>
-            <li><a href="#contact">📞</a></li>
-        </ul>
-    </nav>
-    
-    <section id="about">
-        <h2>Sobre</h2>
-        <p>Sou um desenvolvedor web apaixonado por criar sites incríveis e responsivos.</p>
-        
-        <!-- Div da animação -->
-        <div id="about-animation"></div>
-    </section>
-    
-    <!-- Three.js CDN -->
-    
-
-    <script>
-      const container = document.getElementById('about-animation');
-    
-      const scene = new THREE.Scene();
-      const camera = new THREE.PerspectiveCamera(75, container.offsetWidth / container.offsetHeight, 0.1, 1000);
-      const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-    
-      renderer.setSize(container.offsetWidth, container.offsetHeight);
-      renderer.setPixelRatio(window.devicePixelRatio);
-      container.appendChild(renderer.domElement);
-    
-      const ambientLight = new THREE.AmbientLight(0xffffff, 0.9);
-      scene.add(ambientLight);
-    
-      const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
-      directionalLight.position.set(10, 10, 10).normalize();
-      scene.add(directionalLight);
-    
-      const sphereGeometry = new THREE.SphereGeometry(0.4, 32, 32);
-    
-      const baseMaterial = new THREE.MeshPhysicalMaterial({
-        color: 0xffffff,
-        roughness: 0.9,
-        metalness: 0.2,
-        reflectivity: 1,
-        clearcoat: 1,
-        clearcoatRoughness: 0.1,
-      });
-    
-      const hoverMaterial = new THREE.MeshPhysicalMaterial({
-        color: 0xaadfff, // tom azulado claro
-        roughness: 0.5,
-        metalness: 0.5,
-        reflectivity: 1,
-        clearcoat: 1,
-        clearcoatRoughness: 0.05,
-      });
-    
-      const cols = 30;
-      const rows = 8;
-      const spacing = 1.0;
-      const spheres = [];
-    
-      const raycaster = new THREE.Raycaster();
-      const mouse = new THREE.Vector2();
-      let hoveredSphere = null;
-    
-      for (let x = 0; x < cols; x++) {
-        for (let z = 0; z < rows; z++) {
-          const sphere = new THREE.Mesh(sphereGeometry, baseMaterial.clone());
-          sphere.position.set(
-            (x - cols / 2) * spacing,
-            0,
-            (z - rows / 2) * spacing
-          );
-          scene.add(sphere);
-          spheres.push({ mesh: sphere, x, z });
-        }
-      }
-    
-      camera.position.set(0, 2, 4);
-      camera.lookAt(0, 0, 0);
-    
-      // Detecta movimento do mouse
-      renderer.domElement.addEventListener('mousemove', (event) => {
-  const rect = renderer.domElement.getBoundingClientRect();
-  mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
-  mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
-});
-
-
-    
-      let time = 0;
-    
-      function animate() {
-        requestAnimationFrame(animate);
-        time += 0.01;
-    
-        spheres.forEach(({ mesh, x, z }) => {
-          const wave = Math.sin(time + (x + z) * 0.4);
-          mesh.position.y = wave;
-        });
-    
-        // Interação com o mouse
-        raycaster.setFromCamera(mouse, camera);
-        const intersects = raycaster.intersectObjects(spheres.map(s => s.mesh));
-    
-        if (intersects.length > 0) {
-          const intersected = intersects[0].object;
-    
-          if (hoveredSphere !== intersected) {
-            if (hoveredSphere) {
-              hoveredSphere.material = baseMaterial.clone();
-              hoveredSphere.scale.set(1, 1, 1);
-            }
-    
-            intersected.material = hoverMaterial.clone();
-            intersected.scale.set(1.3, 1.3, 1.3);
-            hoveredSphere = intersected;
-          }
-        } else {
-          if (hoveredSphere) {
-            hoveredSphere.material = baseMaterial.clone();
-            hoveredSphere.scale.set(1, 1, 1);
-            hoveredSphere = null;
-          }
-        }
-    
-        renderer.render(scene, camera);
-      }
-    
-      animate();
-    
-      window.addEventListener('resize', () => {
-        camera.aspect = container.offsetWidth / container.offsetHeight;
-        camera.updateProjectionMatrix();
-        renderer.setSize(container.offsetWidth, container.offsetHeight);
-      });
-    </script>
-    
-    <section id="services">
-        <h2>Serviços</h2>
-        <ul>
-            <li>Criação de sites institucionais</li>
-            <li>Desenvolvimento de e-commerce</li>
-            <li>Otimização para SEO</li>
-            <li>Design responsivo</li>
-        </ul>
-    </section>
-    
-    <section id="portfolio">
-        <h2>Portfólio</h2>
-        <p>Confira alguns dos meus projetos realizados.</p>
-    </section>
-    
-    <section id="contact">
-        <h2>Contato</h2>
-        <p>Entre em contato para desenvolver o seu site.</p>
-        <form>
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 BirdieSites. Todos os direitos reservados.</p>
-    </footer>
 </body>
 </html>
 

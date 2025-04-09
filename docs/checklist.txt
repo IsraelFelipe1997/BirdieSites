@@ -15,11 +15,8 @@
 Descrição curta: Criação de sites únicos, alinhados à identidade e objetivo de cada negócio.
 
 Destaques:
-
 Sem uso de templates genéricos.
-
 Design sob medida com atenção a cada detalhe visual.
-
 Experiência de usuário fluida e intuitiva.
 
 🔹 2. Código Limpo e Otimizado
