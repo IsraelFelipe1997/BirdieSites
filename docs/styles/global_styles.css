@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+    /* box-sizing: border-box; */
     font-family: Arial, sans-serif;
     scroll-behavior: smooth;
 }
@@ -12,3 +12,5 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@import "tailwindcss";

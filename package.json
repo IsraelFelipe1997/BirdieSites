@@ -1,0 +1,26 @@
+{
+  "name": "birdiesites",
+  "version": "1.0.0",
+  "description": "Site desenvolvido com tailwindCSS",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsraelFelipe1997/BirdieSites.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IsraelFelipe1997/BirdieSites/issues"
+  },
+  "homepage": "https://github.com/IsraelFelipe1997/BirdieSites#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.3",
+    "tailwindcss": "^4.1.3"
+  }
+}
