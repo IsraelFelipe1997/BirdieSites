@@ -11,54 +11,16 @@
 
  Organização Estratégica da Section "Serviços":
 
-🔹 1. Desenvolvimento Personalizado
-Descrição curta: Criação de sites únicos, alinhados à identidade e objetivo de cada negócio.
+- subir o site para digital ocean (servidor nova york)
 
-Destaques:
-Sem uso de templates genéricos.
-Design sob medida com atenção a cada detalhe visual.
-Experiência de usuário fluida e intuitiva.
+- Propagar o dominio site na cloudflare para uso de servidores em SP
+- Em seguida criar um email oficial pela zoho mail incluir as configurações de portas do zoho mail na cloudflare
+- depois Configurar plugin smtp no worpress para evitar o uso do smtp do droplet da digital ocean(burocratico)
+- usar forms do elementor pro vinculado Elementor pro Disparo de emails via formulário do wordpress usando plugins para zoho mail
 
-🔹 2. Código Limpo e Otimizado
-Descrição curta: Estrutura robusta e eficiente, desde o front-end até o back-end.
-
-Destaques:
-
-Código escrito à mão, sem plugins pesados.
-
-Performance superior e carregamento rápido.
-
-SEO técnico diretamente no HTML e estrutura.
-
-🔹 3. Design Moderno e Interativo
-Descrição curta: Interfaces modernas com animações que encantam e engajam.
-
-Destaques:
-
-Animações em After Effects com Bodymovin/Lottie.
-
-Interatividade com Three.js e JavaScript puro.
-
-Layouts responsivos para todos os dispositivos.
-
-🔹 4. Visibilidade com SEO
-Descrição curta: Otimizações desde o início para conquistar posições no Google.
-
-Destaques:
-
-SEO on-page e estrutura semântica otimizada.
-
-Estratégia de palavras-chave pensada para o negócio.
-
-Compatibilidade com ferramentas de indexação.
-
-🔹 5. Análise de Resultados
-Descrição curta: Tomada de decisão baseada em dados reais do seu público.
-
-Destaques:
-
-Integração com Google Analytics e Tag Manager.
-
-Relatórios de performance e comportamento dos usuários.
-
-Suporte para campanhas e melhorias contínuas.
+Fluxo Final:
+O visitante preenche o formulário do Elementor Pro.
+Elementor Pro detecta o envio e tenta enviar o e-mail através da função wp_mail().
+O plugin SMTP que você configurou "intercepta" essa chamada.
+O plugin SMTP envia o e-mail usando as credenciais do seu serviço de SMTP externo (Zoho Mail ou um provedor transacional), que tem alta reputação e garante a entrega.
+O e-mail chega na sua caixa de entrada do Zoho Mail (ou para qualquer outro destinatário que você configurar).
